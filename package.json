@@ -5,10 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:production": "ng build --configuration production --base-href '/perla-d-occidente/'",
+    "gh-build": "ng build --output-path docs --base-href perla-d-occidente",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:perla-d-occidente": "node dist/perla-d-occidente/server/server.mjs"
+    "serve:ssr:perla-d-occidente": "node dist/perla-d-occidente/server/server.mjs",
+    "gh-publish": "npx angular-cli-ghpages --dir=dist/perla-d-occidente"
   },
   "private": true,
   "dependencies": {
