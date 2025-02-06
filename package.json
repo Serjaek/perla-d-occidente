@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "gh-build": "ng build --output-path docs --base-href perla-d-occidente",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:perla-d-occidente": "node dist/perla-d-occidente/server/server.mjs"
