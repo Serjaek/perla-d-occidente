@@ -1,61 +1,25 @@
 <main class="main">
   <header>
-    <h1>Perla d'Occidente</h1>
-    <mat-toolbar color="primary">
-      <span>Casa Vacanza</span>
+    <mat-toolbar color="primary" class="navbar">
+      <!-- <img src="assets/logo.png" alt="Logo" class="logo" /> -->
+      <h1>Perla d'Occidente</h1>
       <span class="spacer"></span>
-      <a mat-button routerLink="/about">Chi Siamo</a>
-      <a mat-button routerLink="/gallery">Galleria</a>
-      <a mat-button routerLink="/services">Servizi</a>
-      <a mat-button routerLink="/contact">Contatti</a>
+      <button mat-button>Dove siamo</button>
+      <button mat-button>Contattaci</button>
     </mat-toolbar>
   </header>
-
-  <section id="hero">
-    <h2>Il tuo soggiorno in Sicilia</h2>
-    <p>Scegli la nostra Perla d'Occidente per scoprire la Sicilia Occidentale</p>
-    <a href="#contact" class="cta-button">Prenota ora</a>
-  </section>
-
-  <section id="about">
-    <h2>Chi Siamo</h2>
-    <p>Il nostro appartamento in Residence Habana, a Marsala, è ideale per poter godersi il mare, la piscina e i territori delle provincie di Trapani, Agrigento e Palermo. Fino a 6 persone posso pernottare.</p>
-  </section>
-
-  <section id="gallery">
-    <h2>Galleria</h2>
-    <div class="gallery-container">
-      <img src="img1.jpg" alt="Vista esterna della casa">
-      <img src="img2.jpg" alt="Camera da letto">
-      <img src="img3.jpg" alt="Piscina con vista panoramica">
+    
+    <div class="image-container">
+      <img src="assets/main.png" alt="Casa Vacanza" class="main-image" />
     </div>
-  </section>
-
-  <section id="services">
-    <h2>Servizi</h2>
-    <ul>
-      <li>Wi-Fi gratuito</li>
-      <li>Aria condizionata</li>
-      <li>Piscina</li>
-      <li>Parcheggio privato</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contattaci</h2>
-    <form action="submit-form.php" method="POST">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Messaggio:</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Invia</button>
-    </form>
-  </section>
+    
+    <div class="buttons-container">
+      <a mat-button color="primary" href="https://wa.me/yourwhatsapp" target="_blank">WhatsApp</a>
+      <a mat-button color="accent" href="https://www.airbnb.it" target="_blank">Airbnb</a>
+      <a mat-button color="warn" href="https://www.booking.com" target="_blank">Booking</a>
+      <a mat-button color="primary" href="https://www.instagram.com" target="_blank">Instagram</a>
+      <a mat-button color="accent" href="https://www.facebook.com" target="_blank">Facebook</a>
+    </div>
 
   <footer>
     <p>&copy; 2025 Perla d'Occidente - Appartamento Vacanza a Marsala. Tutti i diritti riservati.</p>
