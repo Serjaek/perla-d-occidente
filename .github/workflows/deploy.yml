@@ -28,7 +28,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular
-        run: npm run build
+        run: npm run build -- --base-href /perla-d-occidente/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
